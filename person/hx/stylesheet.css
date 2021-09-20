@@ -1,0 +1,10 @@
+body{
+    background:url(图片/背景.jpg);
+    margin: 50 auto;
+    width: 70%;   
+    opacity：0;
+}
+
+img{
+    border: 4px solid grey
+}

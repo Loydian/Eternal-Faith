@@ -1,0 +1,135 @@
+.w {
+    margin: 0 auto;
+    width: 1000px;
+}
+header {
+    position: absolute;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10000;
+}
+header .w .self {
+    float: left;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 40px 40px 40px 40px;
+}
+header .w .self img{
+    transform: translate(-80px, 6px);
+    transition: all 0.3s;
+}
+header .w .self img:hover {
+    transform-origin: 50% 50%;
+    transform: translate(-80px, 6px) rotate(-180deg);
+}
+header .w ul a:first-child li {
+    margin-left: 80px;
+}
+header .w ul li.active {
+    color: #f3c258;
+    border-bottom: solid #f3c258;
+    border-bottom-width: 3px;
+    background: linear-gradient(to top, rgb(130, 130, 54, 0.8), rgba(255, 255, 0, 0));  
+}
+header .w ul li {
+    float: left;
+    height: 90px;
+    line-height: 80px;
+    width: 100px;
+    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0);
+}
+header .w ul li:hover {
+    color: #f3c258;
+    border-bottom: solid #f3c258;
+    border-bottom-width: 3px;
+    background: linear-gradient(to top, rgb(130, 130, 54, 0.8), rgba(255, 255, 0, 0));  
+}
+header .w ul a li {
+    font-size: 18px;
+    color: #fff;
+}
+body {
+    background: url('../images/bg2.jpg');
+    background-color: rgba(0, 0, 0, .12);
+}
+.introduction {
+    text-align: center;
+}
+.introduction>div {
+    color: rgb(255, 255, 255);
+    text-shadow: -225px -225px 225px #000, 8px 8px 35px #fff;
+    width: 938px;
+    height: 423px;
+    margin: 120px auto;
+}
+.introduction>div h1,
+.introduction>div .welcome {
+    font-size: 0;
+    transition: all 0.3s;
+}
+.introduction>div:hover h1 {
+    font-size: 85px;
+}
+.introduction>div:hover .welcome {
+    font-size: 56px;
+}
+body div.container1 {
+    background-attachment: fixed;
+    background-image: url("../images/bg4.jpg");
+    z-index: 1;
+    height: 884px;
+}
+body div.container2 {
+    background-attachment: fixed;
+    background-image: url("../images/bg1.jpg");
+    z-index: 1;
+    height: 1200px;
+}
+body div.window {
+    height: 320px;
+    background-position: 0 2000px;
+    z-index: 100;
+    box-shadow: 0 -10px 20px 10px rgba(0, 0, 0, 0.6), 0 10px 20px 10px rgba(0, 0, 0, 0.6);
+}
+body div.container1 div.window {
+    background-image: url("../images/bg3.jpg");
+}
+body div.container2 div.window {
+    background-image: url("../images/bg5.jpg");
+}
+body div.window p {
+    width: 1280px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 60px;
+    text-shadow: -225px -225px 225px #000, 8px 8px 8px #fff; /* (文字凸起效果)可以通过","添加多个阴影 */
+    /* text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff; */
+    /* padding-bottom: 54px; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+footer {
+    padding: 24px 0;
+    height: 100px;
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0 -10px 20px 10px rgba(0, 0, 0, 0.6), 0 10px 20px 10px rgba(0, 0, 0, 0.6);
+}
+.copyright {
+    clear: both;
+    width: 1240px;
+    margin: 0 auto;
+    padding-top: 12px;
+    border-top: 1px solid #666;
+    line-height: 17px;
+    text-align: center;
+    color: #666;
+}
