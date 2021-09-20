@@ -1,0 +1,29 @@
+body div.main {
+    background-image: url('../images/hero2.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+}
+body div.main div.introduction {
+    position: absolute;
+    left: 13.0208vw;
+    top: 14.974vw;
+    width: 45.5729vw;
+    height: 35.6771vw;
+    padding-left: 1.4974vw;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+body div.main div.introduction h2 {
+    width: 42.9688vw;
+    font-weight: bold;
+    font-size: 3.2552vw;
+    color: #fff;
+    padding-top: 2.7344vw;
+    border-bottom: dashed #ffffff;
+    border-bottom-width: 0.1302vw;
+}
+body div.main div.introduction p {
+    line-height: 1.6276vw;
+    margin: 1.3021vw 3.2552vw 0 0.651vw;
+    color: #fff;
+}

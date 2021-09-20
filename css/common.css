@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+ul, ol {
+    list-style: none;
+}
+header {
+    position: fixed;
+    height: 6.5755vw;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+header div.logo {
+    float: left;
+    margin: -0.0651vw 0 0 10.6771vw;
+    height: 6.3802vw;
+    width: 8.7891vw;
+    background: url("../images/logo.png") no-repeat;
+}
+header div.navigator {
+    
+    text-align: center;
+    float: left;
+    width: 10.026vw;
+    height: 6.3802vw;
+}
+header div.navigator:hover {
+    color: #f3c258;
+    border-bottom: solid #f3c258;
+    border-bottom-width: 0.1953vw;
+    background: linear-gradient(to top, rgb(130, 130, 54, 0.8), rgba(255, 255, 0, 0));  
+}
+header div.navigator.selected {
+    color: #f3c258;
+    border-bottom: solid #f3c258;
+    border-bottom-width: 0.1953vw;
+    background: linear-gradient(to top, rgb(130, 130, 54, 0.8), rgba(255, 255, 0, 0));  
+}
+header div.navigator a h3 {
+    font-size: 1.3021vw;
+    color: #c6c8de;
+    padding-top: 1.6927vw;
+}
+header div.navigator a p {
+    font-size: 0.7813vw;
+    padding-top: 0.4557vw;
+    padding-bottom: 1.4714vw;
+    color: #858792;
+}
+header div.lang {
+    float: right;
+    text-align: center;
+    line-height: 6.3802vw;
+    font-size: 0.9766vw;
+    margin-right: 1.9531vw;
+    height: 6.3802vw;
+    color: #c6c8de;
+}
+header div.lang a {
+    text-decoration: none;
+    color: #c6c8de;
+}
+header div.lang a:hover {
+    color: #959df1
+}
+header div.lang a:active {
+    color: #c6c8de;
+}
+div.main {
+    height: 57.4219vw;
+    width: 125vw;
+    overflow: hidden;
+    background-position: center 0vw;
+}
+footer {
+    padding: 2.2135vw 0;
+    height: 19.2057vw;
+    background-color: rgb(42, 42, 42);
+}
+footer div.links {
+    width: 80.7292vw;
+    margin: 0.651vw auto 2.2135vw;
+    zoom: 1;
+    height: 14.3229vw;
+}
+footer div.links div {
+    float: left;
+    margin-left: 5.8594vw;
+    width: 14.3229vw;
+}
+footer div.links div h3 {
+    color: #666;
+    margin-bottom: 1.6276vw;
+    font-size: 1.4974vw;
+}
+footer div.links div ul li a
+{
+    font-size: 1.1719vw;
+    padding-left: 0.4557vw;
+    text-decoration: none;
+    line-height: 1.8229vw;
+    color: rgb(136, 136, 136);
+}
+.copyright {
+    clear: both;
+    width: 80.7292vw;
+    margin: 0 auto;
+    padding-top: 1.0417vw;
+    border-top: 0.0651vw solid #666;
+    line-height: 1.1068vw;
+    text-align: center;
+    color: #666;
+}

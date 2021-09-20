@@ -1,0 +1,165 @@
+body div.main div.chat {
+    margin-top: 6.5104vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+body {
+    margin: 0;
+    background-image: url("../images/hero2.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+  }
+body header {
+  position: absolute;
+}
+  .clearfix::before,
+  .clearfix::after {
+    content: '';
+    visibility: hidden;
+    clear: both;
+    line-height: 0;
+    height: 0;
+    display: block;
+  }
+
+  .clearfix {
+    zoom: 1;
+  }
+
+  .f_l {
+    float: left;
+  }
+
+  .f_r {
+    float: right;
+  }
+
+  .container {
+    margin: 3.2552vw auto 0;
+    width: 52.0833vw;
+    height: 32.5521vw;
+    border: 0.0651vw solid skyblue;
+    border-radius: 0.651vw;
+    background-color: #fff;
+  }
+
+  .message {
+    border-bottom: 0.0651vw solid skyblue;
+    height: 26.0417vw;
+    overflow-y: scroll;
+    padding: 1.3021vw;
+    box-sizing: border-box;
+    transition: all 2s;
+  }
+
+  .control {
+    height: 6.5104vw;
+    padding-left: 3.2552vw;
+    padding-right: 3.2552vw;
+  }
+
+  .inputBox {
+    height: 3.9063vw;
+    margin-top: 1.3021vw;
+    border-radius: 0.3906vw;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+    width: 32.5521vw;
+    font-size: 1.9531vw;
+    box-shadow: 0 0 0.1953vw gray;
+    border: 0.0651vw solid #ccc;
+    transition: all .2s;
+    padding-left: 0.651vw;
+  }
+
+  .inputBox:focus {
+    border-color: skyblue;
+    box-shadow: 0 0 0.1953vw skyblue;
+  }
+
+  .sendButton {
+    height: 4.5573vw;
+    margin-top: 0.9766vw;
+    background-color: yellowgreen;
+    width: 9.7656vw;
+    border: none;
+    outline: none;
+    border-radius: 0.651vw;
+    color: white;
+    font-size: 2.6042vw;
+    font-family: '微软雅黑';
+    cursor: pointer;
+  }
+
+  .message>div>a {
+    text-decoration: none;
+    width: 3.2552vw;
+    height: 3.2552vw;
+    border-radius: 50%;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 3.2552vw;
+    color: white;
+    font-size: 1.6276vw;
+    font-weight: 700;
+    font-family: '微软雅黑';
+  }
+
+  .message>.robot>a {
+    background-color: hotpink;
+  }
+
+  .message>.self>a {
+    background-color: yellowgreen;
+  }
+
+  .message>div {
+    padding: 0.651vw 0;
+  }
+
+  .message>div>p {
+    max-width: 19.5313vw;
+    min-height: 1.8229vw;
+    margin: 0 0.651vw;
+    padding: 0.651vw 0.651vw;
+    background-color: #ccc;
+    border-radius: 0.651vw;
+    word-break: break-all;
+    position: relative;
+    line-height: 1.8229vw;
+    font-weight: 400;
+    font-family: '微软雅黑';
+    color: white;
+    font-size: 1.3021vw;
+  }
+
+  .message>.robot>p {
+    background-color: skyblue;
+  }
+
+  .message>.robot>p::before {
+    content: '';
+    position: absolute;
+    border-top: 0.3906vw solid transparent;
+    border-bottom: 0.3906vw solid transparent;
+    border-right: 0.3906vw solid skyblue;
+    left: -0.3255vw;
+    top: 0.9766vw;
+  }
+
+  .message>.self>p {
+    color: black;
+  }
+
+  .message>.self>p::before {
+    content: '';
+    position: absolute;
+    border-top: 0.3906vw solid transparent;
+    border-bottom: 0.3906vw solid transparent;
+    border-left: 0.3906vw solid #ccc;
+    right: -0.3906vw;
+    top: 0.9766vw;
+  }

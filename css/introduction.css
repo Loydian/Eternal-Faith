@@ -1,0 +1,33 @@
+body div.main {
+    background-image: url("../images/hero2.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+}
+body div.main div.introduction {
+    margin-top: 17.5781vw;
+    height: 35.1563vw;
+}
+body div.main div.introduction ul {
+    color: #fff;
+    width: 55.3385vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+body div.main div.introduction ul li {
+    text-align: center;
+    height: 16.276vw;
+    padding: 0.651vw 0 1.9531vw 0.9766vw;
+    width: 17.3828vw;
+    float: left;
+}
+body div.main div.introduction ul li img {
+    /* float: left; */
+    overflow: hidden;
+    width: 5.2083vw;
+    height: 5.2083vw;
+    margin: 0.3255vw;
+    border-radius: 2.6042vw 2.6042vw 2.6042vw 2.6042vw;
+}

@@ -1,0 +1,30 @@
+body div.main {
+    position: relative;
+    overflow: hidden;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+}
+body div.main div.character {
+    height: 600px;
+    margin: 200px 153.1px;
+    width: 1213px;
+}
+body div.main div.character div.img {
+    float: left;
+    height: 600px;
+    box-shadow: 0 -10px 20px 10px rgba(0, 0, 0, 0.6), 0 10px 20px 10px rgba(0, 0, 0, 0.6);
+}
+body div.main div.character div.img span {
+    position: absolute;
+    height: 600px;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+body div.main div.character div.img:hover span {
+    display: none;
+}
+footer {
+    box-shadow: 0 -10px 20px 10px rgba(0, 0, 0, 0.6), 0 10px 20px 10px rgba(0, 0, 0, 0.6);
+}
