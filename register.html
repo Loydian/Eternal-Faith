@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="register/html; charset=UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="loginDiv">
+        <form action="" id="form">
+            <h1>注册</h1>
+            <p>用户姓名:<input id="userName" type="text" autofocus required><label id="name_trip"></label></p>
+
+            <p>用户密码:<input id="password" type="password" required><label id="password_trip"></label></p>
+
+            <p>确认密码:<input id="surePassword" type="password" required><label id="surePassword_trip"></label></p>
+            <div class="sexDiv">
+                用户性别:
+                <input class="userSex" name="sex" value="boy" type="radio">男
+                <input class="userSex" name="sex" value="girl" type="radio">女
+                <label id="sex_trip"></label>
+            </div>
+            <p>
+                出生日期:
+                <input id="birthday" type="date">
+                <label id="birthday_trip"></label>
+            </p>
+            <p>
+                电子邮件:
+                <input id="email" type="email" required>
+                <label id="emil_trip"></label>
+            </p>
+            <p style="text-align: center;">
+                <input type="submit" class="button" id="submit" style="cursor: pointer;" value="提交">
+            </p>
+        </form>
+    </div>
+
+</body>
+<script src="js/register.js"></script>
+
+</html>

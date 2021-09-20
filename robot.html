@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/robot.css">
+    <link rel="stylesheet" href="css/common.css">
+    <title>云昭之心</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="navigator">
+            <a href="data.html">
+                <h3>游戏资料</h3>
+                <p>DATA<p>
+            </a>
+        </div>
+        <div class="navigator">
+            <a href="character.html">
+                <h3>人物介绍</h3>
+                <p>CHARACTER<p>
+            </a>
+        </div>
+        <div class="navigator">
+            <a href="introduction.html">
+                <h3>小组介绍</h3>
+                <p>INTRODUCTION</p>
+            </a>
+        </div>
+        <div class="navigator selected">
+            <a href="#">
+                <h3>联系客服</h3>
+                <p>CONTACT<p>
+            </a>
+        </div>
+        <div class="lang">
+            <a href="index.html">中文&nbsp;</a>|
+            <a href="index_eng.html">Eng</a>
+        </div>
+    </header>
+    <!-- 加轮播图!!!!!!!! -->
+    <div class="main">
+        <div class="chat">
+            <div class="container">
+                <div class="message">
+                    <div class="robot clearfix">
+                        <a href="#" class='f_l'>机</a>
+                        <p class='f_l'>亲, 这边有什么疑问吗?</p>
+                    </div>
+                </div>
+                <div class="control">
+                    <input type="text" class='inputBox f_l'>
+                    <input type="button" class='sendButton f_r' value='发 送'>
+                </div>
+            </div>
+
+            <!-- 隐藏的 自己聊天框 -->
+            <div id='hidden_self' class="self clearfix" style='display:none'>
+                <a href="#" class="f_r">人</a>
+                <p class="f_r">123213</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="links">
+            <div class="members">
+                <h3>
+                    制作成员
+                </h3>
+                <ul>
+                    <li><a href="person/Loyd/index.html">李煜东</a></li>
+                    <li><a href="person/Hatcher/罗航的个人主页.html">罗航</a></li>
+                    <li><a href="person/yzy/杨致远.html">杨致远</a></li>
+                    <li><a href="person/wjc/自我介绍.html">吴俊成</a></li>
+                    <li><a href="person/lym/骆彦萌个人网站.html">骆彦萌</a></li>
+                    <li><a href="person/hx/自我介绍.html">何绚</a></li>
+                </ul>
+            </div>
+            <div class="members">
+                <h3>
+                    制作成员
+                </h3>
+                <ul>
+                    <li><a href="person/Loyd/index.html">李煜东</a></li>
+                    <li><a href="person/Hatcher/罗航的个人主页.html">罗航</a></li>
+                    <li><a href="person/yzy/杨致远.html">杨致远</a></li>
+                    <li><a href="person/wjc/自我介绍.html">吴俊成</a></li>
+                    <li><a href="person/lym/骆彦萌个人网站.html">骆彦萌</a></li>
+                    <li><a href="person/hx/自我介绍.html">何绚</a></li>
+                </ul>
+            </div>
+            <div class="members">
+                <h3>
+                    制作成员
+                </h3>
+                <ul>
+                    <li><a href="person/Loyd/index.html">李煜东</a></li>
+                    <li><a href="person/Hatcher/罗航的个人主页.html">罗航</a></li>
+                    <li><a href="person/yzy/杨致远.html">杨致远</a></li>
+                    <li><a href="person/wjc/自我介绍.html">吴俊成</a></li>
+                    <li><a href="person/lym/骆彦萌个人网站.html">骆彦萌</a></li>
+                    <li><a href="person/hx/自我介绍.html">何绚</a></li>
+                </ul>
+            </div>
+            <div class="members">
+                <h3>
+                    制作成员
+                </h3>
+                <ul>
+                    <li><a href="person/Loyd/index.html">李煜东</a></li>
+                    <li><a href="person/Hatcher/罗航的个人主页.html">罗航</a></li>
+                    <li><a href="person/yzy/杨致远.html">杨致远</a></li>
+                    <li><a href="person/wjc/自我介绍.html">吴俊成</a></li>
+                    <li><a href="person/lym/骆彦萌个人网站.html">骆彦萌</a></li>
+                    <li><a href="person/hx/自我介绍.html">何绚</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © All Rights Reserved.</p>
+            <p>线上拼多多 版权所有</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="./js/jquery.min.js"></script>
+<script>
+    // 自己的js代码
+    $(function () {
+        $(".sendButton").click(function () {
+            // 创建自己的聊天框
+            // 每次克隆第一个
+            var $cloneSelf = $(".self").first().clone();
+            // 添加到容器中
+            $('.message').append($cloneSelf);
+            $cloneSelf.show();
+            // 获取输入框的内容 设置给克隆的 元素内部的 p标签
+            $cloneSelf.find('p').html($('.inputBox').val());
+
+            // ajax请求
+            //1.创建对象
+            var xhr = new XMLHttpRequest();
+            //2.设置请求行(get请求数据写在url后面)
+            xhr.open('post', 'http://www.tuling123.com/openapi/api');
+            //3.设置请求头(get请求可以省略,post不发送数据也可以省略)
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            //3.5注册回调函数
+            xhr.onload = function () {
+                console.log(xhr.responseText);
+                // 克隆机器人的聊天框
+                var $cloneRobot = $('.robot').first().clone();
+                var json = JSON.parse(xhr.responseText)
+                $cloneRobot.appendTo('.message');
+                $cloneRobot.find('p').html(json.text);
+            }
+            //4.请求主体发送(get请求为空，或者写null，post请求数据写在这里，如果没有数据，直接为空或者写null)
+            xhr.send('key=e39a340d87da47829c3bee5c4df64203&info=' + $(".inputBox").val());
+        })
+    })
+</script>

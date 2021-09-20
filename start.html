@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/lunbo.css">
+    <link rel="stylesheet" href="css/botton.css">
+    <title>云昭之心</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <script src="js/jquery.min.js"></script>
+    <script src='js/phaser.min.js'></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="btns">
+            <div class="new btn">新游戏</div>
+            <div class="continue btn">继续游戏</div>
+            <a href="login.html">
+                <div class="login btn">
+                    登录
+                </div>
+            </a>
+            <a href="register.html">
+                <div class="register btn">
+                    注册
+                </div>
+            </a>
+            <div class="chengjiu btn">
+                成就
+            </div>
+            <a href="index.html">
+                <div class="return btn">
+                    返回主页
+                </div>
+            </a>
+        </div>
+        <div class="store">
+            <div class="head">
+                游戏存档
+            </div>
+            <div class="choices">
+                <div class="choice">
+                    <h4>1</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+                <div class="choice">
+                    <h4>2</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+                <div class="choice">
+                    <h4>3</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+                <div class="choice">
+                    <h4>4</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+                <div class="choice">
+                    <h4>5</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+                <div class="choice">
+                    <h4>6</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+                <div class="choice">
+                    <h4>7</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+                <div class="choice">
+                    <h4>8</h4>
+                    <span>
+                        <h5>进度</h5>
+                        <span class="time">时间戳</span>
+                    </span>
+                </div>
+            </div>
+            <div class="close">×</div>
+        </div>
+        <div class="logo"></div>
+        <div class="box">
+            <!-- 左侧按钮 -->
+            <a href="javascript:;" class="left">&lt</a>
+            <!-- 右侧按钮 -->
+            <a href="javascript:;" class="right">&gt</a>
+            <!-- 轮播图片 -->
+            <ul class="imgs">
+            </ul>
+            <ul class="list">
+            </ul>
+            <div class="rights"></div>
+            <div class="lefts"></div>
+            <div class="shut">
+                ×
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    var video = document.createElement('video');
+    video.autoplay = "autoplay";
+    // video.play()
+    video.src = "music/defalut.mp3";
+    video.loop = "loop";
+
+    document.body.appendChild(video);
+    function play() {
+        video.play();
+        document.removeEventListener('click', play);
+    }
+
+    document.addEventListener('click', play);
+    $(".btn").slideDown();
+    $(".logo").slideDown();
+
+</script>
+<script src="js/lunbo.js"></script>
+<script src="js/start.js"></script>
